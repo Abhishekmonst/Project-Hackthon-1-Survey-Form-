@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diamond Pattern</title>
+</head>
+<body>
+    <h1>Diamond Pattern in Javascript</h1>
+    <script>
+        let n=5 
+
+        for(let i=1;i<=n;i++){
+            let str="";
+
+
+            //adding the white space to the left//
+            for(let k=1;k<=n-i;k++){
+                str+="";
+            }
+
+            //adding the '*' for each row//
+            for(let j=0;j!=2*i-1;j++){
+                str+="*";
+            }
+
+            //adding the white space to the right//
+            for(k=i+1;k<=n;k++){
+                str+="";
+            }
+
+            //printing the pyramid pattern for each row//
+            console.log(str);
+        }
+
+        //Print the second half of the Diamond//
+        for(let i=n-1;i>=1;i--){
+            let str="";
+
+            //adding the white space to the left//
+            for(let k=1;k<=n-i;k++){
+                str+="";
+             }
+
+             //adding the "*" for each now//
+             for(let j=0;j!=2*i-1;j++){
+                str+="*";
+             }
+
+             //adding the white space th the right//
+             for(let k=i+1;k<=n;k++){
+                str+="";
+             }
+
+             //Print the pyramid pattern foe each row//
+             console.log(str);
+        }
+    </script>
+</body>
+</html>
